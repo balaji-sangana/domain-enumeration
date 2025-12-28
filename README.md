@@ -63,7 +63,7 @@
 
 🔹 Clone the Repository
 ```bash
-git clone https://github.com/<your-username>/domain-enumeration.git
+git clone https://github.com/balaji-sangana/domain-enumeration.git
 cd domain-enumeration
 ```
 🔹 Install Dependencies
