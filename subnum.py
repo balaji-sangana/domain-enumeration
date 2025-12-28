@@ -187,7 +187,7 @@ def main():
         if subs:
             outfile = args.o if args.o else f"{args.domain}.txt"
             with open(outfile, "w") as f:
-                for sub in sorted(subs.items()):
+                for sub, tags in sorted(subs.items()):
                     f.write(f"{sub}\n")
 
             qprint(f"[✓] Subdomains found: {len(subs)}", args.quiet)
