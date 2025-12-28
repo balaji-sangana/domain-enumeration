@@ -3,7 +3,7 @@
 # domain-enumeration
 # File    : subnum.py
 # Author  : Balaji Sangana
-# Version : 1.2.1
+# Version : 1.0.0
 # ==========================================================
 # ⚠ For educational and authorized security testing only
 # ⚠ We are not responsible for any illegal actions
@@ -187,8 +187,8 @@ def main():
         if subs:
             outfile = args.o if args.o else f"{args.domain}.txt"
             with open(outfile, "w") as f:
-                for sub, tags in sorted(subs.items()):
-                    f.write(f"{sub} [{','.join(sorted(tags))}]\n")
+                for sub in sorted(subs.items()):
+                    f.write(f"{sub}\n")
 
             qprint(f"[✓] Subdomains found: {len(subs)}", args.quiet)
             qprint(f"[✓] Saved to: {outfile}", args.quiet)
